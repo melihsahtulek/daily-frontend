@@ -1,2 +1,2 @@
-# daily front end
+# daily frontend
 daily frontend for your next project.

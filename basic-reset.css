@@ -37,4 +37,13 @@ html body button {
           box-shadow: none;
   border: none;
 }
+
+html body button {
+  cursor: pointer;
+}
+
+html body ul {
+  list-style: none;
+  list-style-type: none;
+}
 /*# sourceMappingURL=basic-reset.css.map */

@@ -3,7 +3,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -20,8 +20,8 @@ html body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   line-height: normal;
   color: inherit;
@@ -34,7 +34,7 @@ html body button {
   font-size: inherit;
   outline: none;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   border: none;
 }
 
@@ -53,11 +53,11 @@ html body ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #d73c2c;
 }
 
@@ -67,7 +67,7 @@ html body ul {
   background-color: #e74c3c;
   border-radius: 7px;
   -webkit-box-shadow: 30px 30px 0px 5px rgba(255, 255, 255, 0.1);
-  box-shadow: 30px 30px 0px 5px rgba(255, 255, 255, 0.1);
+          box-shadow: 30px 30px 0px 5px rgba(255, 255, 255, 0.1);
 }
 
 .container .card .title h2 {
@@ -75,8 +75,8 @@ html body ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   color: #ffffff;
   line-height: 1;
   font-weight: 500;
@@ -89,11 +89,11 @@ html body ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 7px;
   margin-right: 10px;
   background-color: #ffffff;
@@ -116,8 +116,8 @@ html body ul {
 
 .container .card .form-container form input {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   border-radius: 7px;
   padding: 0 10px;
   border: 1px solid #202124;
@@ -144,11 +144,11 @@ html body ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 7px;
   background-color: #ffffff;
   width: 125px;
@@ -181,7 +181,7 @@ html body ul {
   }
   html .container .card .form-container form {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   html .container .card .form-container form input,
   html .container .card .form-container form button {
@@ -191,3 +191,4 @@ html body ul {
     margin-top: 10px;
   }
 }
+/*# sourceMappingURL=style.css.map */

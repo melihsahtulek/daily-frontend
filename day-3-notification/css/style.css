@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  font-size: 16px;
+}
+
+html body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  line-height: normal;
+  color: inherit;
+}
+
+html body input,
+html body button {
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+html body button {
+  cursor: pointer;
+}
+
+html body ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(45, 85, 255, 0.35);
+}
+
+.container .notification {
+  width: 500px;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 7px;
+  -webkit-box-shadow: -30px -30px 0 0px rgba(255, 255, 255, 0.15);
+          box-shadow: -30px -30px 0 0px rgba(255, 255, 255, 0.15);
+}
+
+.container .notification .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .notification .title-container .title-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .notification .title-container .title-text i {
+  min-width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2d55ff;
+  font-size: 1.75rem;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+.container .notification .title-container .title-text h2 {
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 1.35rem;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.15;
+}
+
+.container .notification .title-container .title-text h2 small {
+  font-size: 0.75rem;
+  color: #535353;
+  font-weight: 700;
+}
+
+.container .notification .title-container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.75rem;
+}
+
+.container .notification .content {
+  margin-top: 2rem;
+}
+
+.container .notification .content p {
+  color: #535353;
+}
+
+.container .notification .buttons {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .notification .buttons button {
+  padding: 0.5rem 2rem;
+  border-radius: 7px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.container .notification .buttons button:nth-of-type(1) {
+  background-color: transparent;
+  border: 1px solid #9ed8c0;
+  color: #9ed8c0;
+  margin-right: 10px;
+}
+
+.container .notification .buttons button:nth-of-type(2) {
+  background-color: transparent;
+  border: 1px solid #d13d51;
+  color: #d13d51;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 14px;
+  }
+  html .container {
+    padding: 0 1rem;
+  }
+  html .container .notification {
+    width: 100%;
+  }
+  html .container .notification .title-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html .container .notification .title-container .title-text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html .container .notification .buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=style.css.map */

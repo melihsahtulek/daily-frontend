@@ -1,2 +1,2 @@
 # daily frontend
-daily frontend for your next project.
+by @melihsahtulek

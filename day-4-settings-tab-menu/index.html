@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/day-4-settings-tab-menu/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- TAB -->
+      <div class="tab-container">
+        <div class="tab-buttons">
+          <button type="button" data-tab-id="tab-settings" data-tab-button="tab-profile">profile</button>
+          <button type="button" data-tab-id="tab-settings" data-tab-button="tab-account" class="active-tab">account</button>
+          <button type="button" data-tab-id="tab-settings" data-tab-button="tab-messages">messages</button>
+          <button type="button" data-tab-id="tab-settings" data-tab-button="tab-notifications">notifications</button>
+          <button type="button" data-tab-id="tab-settings" data-tab-button="tab-favorite-products">favorite products</button>
+        </div>
+        <div class="tab-items">
+          <div data-tab-id="tab-settings" data-tab-item="tab-profile" class="item">profile</div>
+          <div data-tab-id="tab-settings" data-tab-item="tab-account" class="item active-tab">account</div>
+          <div data-tab-id="tab-settings" data-tab-item="tab-messages" class="item">messages</div>
+          <div data-tab-id="tab-settings" data-tab-item="tab-notifications" class="item">notifications</div>
+          <div data-tab-id="tab-settings" data-tab-item="tab-favorite-products" class="item">favorite</div>
+        </div>
+      </div>
+      <!-- TAB-END -->
+    </div>
+
+    <script src="./js/tab.js"></script>
+  </body>
+</html>

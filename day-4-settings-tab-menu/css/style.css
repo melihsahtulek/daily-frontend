@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  font-size: 16px;
+}
+
+html body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  line-height: normal;
+  color: inherit;
+}
+
+html body input,
+html body button {
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+
+html body button {
+  cursor: pointer;
+}
+
+html body ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+.container {
+  height: 100vh;
+  background-color: rgba(228, 241, 254, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.container .tab-container {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .tab-container .tab-buttons {
+  background-color: #ffffff;
+  border-radius: 7px;
+  padding: 1rem 2rem;
+  -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .tab-container .tab-buttons button {
+  padding: 1rem 2rem;
+  color: #84849c;
+  text-transform: lowercase;
+}
+
+.container .tab-container .tab-buttons button.active-tab {
+  background-color: #263562;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+.container .tab-container .tab-items {
+  background-color: #ffffff;
+  border-radius: 7px;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  -webkit-box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+          box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  min-width: 100%;
+}
+
+.container .tab-container .tab-items .item {
+  min-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #535353;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container .tab-container .tab-items .item.active-tab {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  visibility: visible;
+  opacity: 1;
+  position: inherit;
+  left: inherit;
+  top: inherit;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

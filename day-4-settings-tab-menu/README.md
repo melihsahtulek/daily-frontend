@@ -1,0 +1,1 @@
+![](https://raw.githubusercontent.com/melihsahtulek/daily-frontend/master/day-4-settings-tab-menu/images/day-4-settings-tab-menu-desktop.jpeg)

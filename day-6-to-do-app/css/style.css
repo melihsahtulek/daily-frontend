@@ -1,0 +1,152 @@
+.container {
+  min-height: 100vh;
+  background-color: rgba(255, 89, 89, 0.95);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #333333;
+}
+
+.container .to-do {
+  width: 420px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  -webkit-box-shadow: 20px 20px rgba(238, 242, 251, 0.25);
+          box-shadow: 20px 20px rgba(238, 242, 251, 0.25);
+  padding: 2rem;
+}
+
+.container .to-do .to-do-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .to-do .to-do-header h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.35rem;
+}
+
+.container .to-do .to-do-header .menu {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.container .to-do .to-do-header .menu .menuBtn {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: inherit;
+}
+
+.container .to-do .to-do-header .menu .menuBtn i {
+  font-size: 2rem;
+}
+
+.container .to-do .to-do-header .menu .drop-down {
+  position: absolute;
+  width: 300px;
+  right: 0;
+  top: auto;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+}
+
+.container .to-do .to-do-header .menu .drop-down a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #676fa3;
+  padding: 7px 12px;
+}
+
+.container .to-do .to-do-header .menu .drop-down a i {
+  font-size: 1.5rem;
+}
+
+.container .to-do .open-to-do {
+  padding-top: 1rem;
+}
+
+.container .to-do .open-to-do ul li {
+  width: 100%;
+}
+
+.container .to-do .open-to-do ul li label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+}
+
+.container .to-do .open-to-do ul li label .checkbox {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ff5959;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .to-do .open-to-do ul li label .checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.container .to-do .open-to-do ul li label .checkbox .checked-icon {
+  font-size: 1.75rem;
+  color: #ff5959;
+}
+
+.container .to-do .open-to-do ul li label h4 {
+  text-transform: capitalize;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #ff5959;
+}
+
+.container .to-do .to-do-footer {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

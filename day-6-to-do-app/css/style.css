@@ -58,9 +58,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: inherit;
 }
 
@@ -111,12 +111,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 50px;
+  min-height: 30px;
+  cursor: pointer;
 }
 
 .container .to-do .open-to-do ul li label .checkbox {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   border: 1px solid #ff5959;
   border-radius: 5px;
   display: -webkit-box;
@@ -135,7 +136,7 @@
 }
 
 .container .to-do .open-to-do ul li label .checkbox .checked-icon {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   color: #ff5959;
 }
 
@@ -144,9 +145,34 @@
   font-weight: 400;
   padding-left: 10px;
   color: #ff5959;
+  font-size: 0.95rem;
+}
+
+.container .to-do .open-to-do ul li:not(:last-of-type) {
+  margin-bottom: 10px;
 }
 
 .container .to-do .to-do-footer {
-  display: none;
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .to-do .to-do-footer .add-new-to-do {
+  padding: calc(1rem / 2) 2rem;
+  background-color: #ff5959;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .to-do .to-do-footer .add-new-to-do i {
+  color: #ffffff;
+  font-size: 1.75rem;
 }
 /*# sourceMappingURL=style.css.map */

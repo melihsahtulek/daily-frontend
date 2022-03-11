@@ -16,7 +16,7 @@
 .container .to-do {
   width: 420px;
   background-color: #ffffff;
-  border-radius: 15px;
+  border-radius: 10px;
   -webkit-box-shadow: 20px 20px rgba(238, 242, 251, 0.25);
           box-shadow: 20px 20px rgba(238, 242, 251, 0.25);
   padding: 2rem;
@@ -44,9 +44,7 @@
 }
 
 .container .to-do .to-do-header .menu {
-  position: relative;
   height: 50px;
-  overflow: hidden;
 }
 
 .container .to-do .to-do-header .menu .menuBtn {
@@ -68,36 +66,12 @@
   font-size: 2rem;
 }
 
-.container .to-do .to-do-header .menu .drop-down {
-  position: absolute;
-  width: 300px;
-  right: 0;
-  top: auto;
-  background-color: #ffffff;
-  border: 1px solid #efefef;
-  border-radius: 5px;
-}
-
-.container .to-do .to-do-header .menu .drop-down a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #676fa3;
-  padding: 7px 12px;
-}
-
-.container .to-do .to-do-header .menu .drop-down a i {
-  font-size: 1.5rem;
-}
-
 .container .to-do .open-to-do {
-  padding-top: 1rem;
+  margin-top: 1rem;
+  max-height: 250px;
+  overflow: auto;
+  scrollbar-color: #efefef;
+  scrollbar-width: thin;
 }
 
 .container .to-do .open-to-do ul li {
@@ -116,9 +90,8 @@
 }
 
 .container .to-do .open-to-do ul li label .checkbox {
-  width: 25px;
+  min-width: 25px;
   height: 25px;
-  border: 1px solid #ff5959;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,22 +102,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.container .to-do .open-to-do ul li label .checkbox input[type="checkbox"] {
-  display: none;
+  border: 1px solid #efefef;
 }
 
 .container .to-do .open-to-do ul li label .checkbox .checked-icon {
   font-size: 1.25rem;
-  color: #ff5959;
 }
 
 .container .to-do .open-to-do ul li label h4 {
   text-transform: capitalize;
   font-weight: 400;
   padding-left: 10px;
-  color: #ff5959;
   font-size: 0.95rem;
 }
 
@@ -152,27 +120,104 @@
   margin-bottom: 10px;
 }
 
+.container .to-do .open-to-do ul li.checked label .checkbox {
+  border: 1px solid #ff5959;
+}
+
+.container .to-do .open-to-do ul li.checked label .checkbox .checked-icon {
+  color: #ff5959;
+}
+
+.container .to-do .open-to-do ul li.checked label h4 {
+  color: #ff5959;
+  text-decoration: line-through;
+}
+
+.container .to-do .open-to-do::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+}
+
+.container .to-do .open-to-do::-webkit-scrollbar-button {
+  display: none;
+}
+
+.container .to-do .open-to-do::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #efefef;
+}
+
+.container .to-do .open-to-do::-webkit-scrollbar-track {
+  display: none;
+}
+
+.container .to-do .open-to-do::-webkit-scrollbar-track-piece {
+  display: none;
+}
+
 .container .to-do .to-do-footer {
-  padding-top: 3rem;
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+}
+
+.container .to-do .to-do-footer input {
+  max-width: calc(100% - 75px - 1rem);
+  border: 1px solid #efefef;
+  height: 50px;
+  padding: 0 1rem;
+  border-radius: 10px;
+}
+
+.container .to-do .to-do-footer input:focus {
+  border-color: #ff5959;
 }
 
 .container .to-do .to-do-footer .add-new-to-do {
-  padding: calc(1rem / 2) 2rem;
+  min-width: 75px;
+  height: 50px;
   background-color: #ff5959;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 1rem;
 }
 
 .container .to-do .to-do-footer .add-new-to-do i {
   color: #ffffff;
   font-size: 1.75rem;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+  html .container {
+    padding: 0 1rem;
+  }
+  html .container .to-do {
+    width: 100%;
+  }
+  html .container .to-do .to-do-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html .container .to-do .to-do-footer input {
+    max-width: unset;
+  }
+  html .container .to-do .to-do-footer .add-new-to-do {
+    margin: 0;
+    margin-top: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

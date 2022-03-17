@@ -1,5 +1,238 @@
 .container {
   min-height: 100vh;
-  background-color: rgba(48, 71, 94, 0.25);
+  background-color: rgba(48, 71, 94, 0.13);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .table-container {
+  width: 768px;
+}
+
+.container .table-container .table-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1rem 0;
+}
+
+.container .table-container .table-head .search-inp {
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  border: 1px solid #bcbcc5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.container .table-container .table-head .search-inp input {
+  height: 45px;
+  width: 250px;
+  padding-left: 10px;
+  color: #30475e;
+}
+
+.container .table-container .table-head .search-inp i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #30475e;
+  background-color: transparent;
+}
+
+.container .table-container .table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.container .table-container .table .thead {
+  display: table-header-group;
+}
+
+.container .table-container .table .thead .tr .th {
+  padding: 0px 17px;
+}
+
+.container .table-container .table .thead .tr .th button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #30475e;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.container .table-container .table .thead .tr .th button i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.container .table-container .table .tbody {
+  display: table-row-group;
+}
+
+.container .table-container .table .tbody .tr {
+  background-color: rgba(254, 254, 254, 0.9);
+  position: relative;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.container .table-container .table .tbody .tr .td {
+  padding: 12px 17px;
+  text-transform: capitalize;
+  color: #30475e;
+}
+
+.container .table-container .table .tbody .tr .td:first-of-type {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.container .table-container .table .tbody .tr .td:last-of-type {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.container .table-container .table .tbody .tr .td a {
+  border: 1px solid #2666cf;
+  color: #2666cf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 35px;
+  padding: 0 5px;
+  border-radius: 4px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.container .table-container .table .tbody .tr::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 4px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 4px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.container .table-container .table .tbody .tr:hover {
+  background: #ffffff;
+}
+
+.container .table-container .table .tbody .tr:hover a {
+  background: #2666cf;
+  color: #ffffff;
+}
+
+.container .table-container .table .tr {
+  display: table-row;
+}
+
+.container .table-container .table .tr .td,
+.container .table-container .table .tr .th {
+  display: table-cell;
+}
+
+.container .table-container .controls {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: -10px;
+  overflow: hidden;
+}
+
+.container .table-container .controls button {
+  padding: 7px 0;
+  background-color: rgba(254, 254, 254, 0.9);
+  border-radius: 4px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: lowercase;
+  border: 1px solid #bcbcc5;
+  color: #30475e;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.container .table-container .controls button i {
+  font-size: 20px;
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .table-container .controls button:first-of-type {
+  padding-right: 10px;
+}
+
+.container .table-container .controls button:last-of-type {
+  padding-left: 10px;
+}
+
+.container .table-container .controls button.disable {
+  cursor: not-allowed;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: rgba(48, 71, 94, 0.5);
+}
+
+.container .table-container .controls button:not(.disable):hover {
+  background: #ffffff;
+  color: #2666cf;
+}
+
+.container .table-container .controls button:not(.disable):hover i {
+  color: #2666cf;
 }
 /*# sourceMappingURL=style.css.map */

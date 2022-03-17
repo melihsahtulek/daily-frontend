@@ -34,7 +34,6 @@ const init = () => {
     const row = document.createElement("tr");
     row.classList.add("tr");
     thead.insertAdjacentElement("beforeend", row);
-    console.log(thead.children[0]);
 
     Array.from(Object.keys(data[0])).forEach((key) => {
       thead.children[0].insertAdjacentHTML(
@@ -49,6 +48,28 @@ const init = () => {
   };
 
   const writeRows = (data) => {
-    console.log(data.length);
+    Array.from(data).forEach((perData, index) => {
+      const row = document.createElement("tr");
+      row.classList.add("tr");
+      tbody.insertAdjacentElement("beforeend", row);
+
+      Array.from(Object.keys(perData)).forEach((key) => {
+        tbody.children[index].insertAdjacentHTML(
+          "beforeend",
+          `
+            <div class="td">${perData[key]}</div>
+          `
+        );
+      });
+
+      tbody.children[index].insertAdjacentHTML(
+        "beforeend",
+        `
+        <div class="td">
+          <a href="javascript:void(0)"> link ${perData.id} </a>
+        </div>
+        `
+      );
+    });
   };
 };

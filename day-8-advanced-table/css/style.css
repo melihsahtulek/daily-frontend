@@ -10,10 +10,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 1rem;
 }
 
 .container .table-container {
-  width: 768px;
+  width: 1366px;
 }
 
 .container .table-container .table-head {

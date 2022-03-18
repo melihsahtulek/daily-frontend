@@ -10,7 +10,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .container .table-container {
@@ -237,5 +237,15 @@
 
 .container .table-container .controls button:not(.disable):hover i {
   color: #2666cf;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    overflow: auto;
+    display: unset;
+  }
+  .container .table-container {
+    min-width: 1366px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

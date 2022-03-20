@@ -11,10 +11,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="carousel">
+      <div class="carousel" id="my-carousel">
         <div class="carousel-items">
           <!-- =========================== ITEM =========================== -->
-          <a href="javascript:void(0)" class="carousel-item">
+          <a href="javascript:void(0)" class="carousel-item" data-carousel-item-id="my-carousel">
             <img src="https://picsum.photos/600/300?random=1&blur=5" alt="" class="carousel-img" />
             <div class="carousel-content">
               <h3>carousel item 1</h3>
@@ -24,7 +24,7 @@
           <!-- =========================== ITEM =========================== -->
 
           <!-- =========================== ITEM =========================== -->
-          <a href="javascript:void(0)" class="carousel-item">
+          <a href="javascript:void(0)" class="carousel-item" data-carousel-item-id="my-carousel">
             <img src="https://picsum.photos/700/300?random=2&blur=5" alt="" class="carousel-img" />
             <div class="carousel-content">
               <h3>carousel item 2</h3>
@@ -34,7 +34,7 @@
           <!-- =========================== ITEM =========================== -->
 
           <!-- =========================== ITEM =========================== -->
-          <a href="javascript:void(0)" class="carousel-item">
+          <a href="javascript:void(0)" class="carousel-item" data-carousel-item-id="my-carousel">
             <img src="https://picsum.photos/700/300?random=3&blur=5" alt="" class="carousel-img" />
             <div class="carousel-content">
               <h3>carousel item 3</h3>
@@ -43,12 +43,11 @@
           </a>
           <!-- =========================== ITEM =========================== -->
         </div>
-
         <div class="carousel-controls">
-          <button type="button" class="prev">
+          <button type="button" class="prev" data-carousel-btn="my-carousel">
             <i class="ri-arrow-left-s-line"></i>
           </button>
-          <button type="button" class="next">
+          <button type="button" class="next" data-carousel-btn="my-carousel">
             <i class="ri-arrow-right-s-line"></i>
           </button>
         </div>

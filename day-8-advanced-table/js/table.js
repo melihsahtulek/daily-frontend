@@ -11,7 +11,7 @@ const init = () => {
   const getJsonData = new Promise((resolve, reject) => {
     try {
       setTimeout(async () => {
-        const response = await fetch("/day-8-advanced-table/table-data.json");
+        const response = await fetch("../table-data.json");
         const json = await response.json();
         resolve(json);
       }, 250);

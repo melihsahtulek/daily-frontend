@@ -1,0 +1,79 @@
+@import "./styles.css";
+
+.buttonContainer {
+  position: relative;
+  width: 200px;
+  height: 75px;
+}
+
+.buttonContainer .bg {
+  background-color: #038aff;
+  position: absolute;
+  left: 50%; /* left: calc((200px / 2) - 25px); */
+  transform: translateX(-50%);
+  border-radius: 7px;
+}
+
+.bgNormal {
+  width: 40px;
+  height: 100%;
+  box-shadow: 0 0 5px #038aff, 0 0 15px #038aff, 0 0 25px #038aff, 0 0 35px #038aff;
+  transition: all 0.2s;
+}
+
+.bgHover {
+  width: 80%;
+  height: calc(100% - 20px);
+  box-shadow: 0 0 30px #038aff, 0 0 40px #038aff, 0 0 50px #038aff, 0 0 60px #038aff;
+  top: 10px;
+  transition: all 0.2s;
+}
+
+.buttonContainer .customBtn {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 10px 0;
+}
+
+.buttonContainer .customBtn button {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(35px);
+}
+
+.buttonContainer .customBtn button::before {
+  position: absolute;
+  content: "";
+  width: 110px;
+  height: 100%;
+  top: 0;
+  left: -10px;
+  transform: skewX(40deg);
+  background-color: rgba(255, 255, 255, 0.095);
+  transition: all 0.5s;
+}
+
+.buttonContainer .customBtn button span {
+  position: relative;
+  font-size: 20px;
+  color: var(--white);
+  transition: all 0.5s;
+}
+
+.buttonContainer .customBtn button:hover span {
+  letter-spacing: 3px;
+}
+
+.buttonContainer .customBtn button:hover::before {
+  left: calc(100% + 10px);
+}

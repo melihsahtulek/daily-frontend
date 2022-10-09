@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sweet button</title>
+    <link rel="stylesheet" href="./assets/css/button.css" />
+  </head>
+  <body>
+    <div class="buttonContainer">
+      <div class="bg bgNormal"></div>
+      <div class="customBtn">
+        <button type="button" class="btn"><span>Button</span></button>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelectorAll(".btn");
+      const bg = document.querySelectorAll(".bg");
+      btn.forEach((button, index) => {
+        button.addEventListener("mouseenter", () => {
+          setTimeout(() => {
+            bg[index].classList.remove("bgNormal");
+            bg[index].classList.add("bgHover");
+          }, 300);
+        });
+
+        button.addEventListener("mouseleave", () => {
+          setTimeout(() => {
+            bg[index].classList.remove("bgHover");
+            bg[index].classList.add("bgNormal");
+          }, 300);
+        });
+      });
+    </script>
+  </body>
+</html>
